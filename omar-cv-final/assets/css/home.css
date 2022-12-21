@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap');
+
+:root {
+    --main-bg: #37517e;
+    /* --main-bg: #0d7582; */
+    --main-txt: #fff;
+    --active-bg: #263756;
+    --active-txt: #0d6efd;
+    --dark-bg: #1e1c20;
+}
+
+/* start landing */
+.landing {
+    height: 80vh;
+    background: var(--main-bg);
+}
+
+.landing .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.landing .container .row {
+    align-items: center;
+    text-align: right;
+}
+
+.landing .container .row .info h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.landing .container .row .info p {
+    color: #eee;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+@media (max-width:767px) {
+    .landing .row {
+        justify-content: center;
+        text-align: center !important;
+        height: 90%;
+        align-content: center;
+        gap: 20px;
+    }
+
+    .landing .row .image {
+        margin-top: -20px;
+    }
+
+    .landing .container .row .info h2 {
+        font-size: 2.1rem;
+    }
+
+    .landing .container .row .info p {
+        font-size: 1rem;
+    }
+}
+
+/* end landing */
+
+/* start about-us */
+.about-us .main-part {
+    background: white;
+}
+
+.about-us {
+    background: var(--main-bg);
+}
+
+.about-us .container .row {
+    color: var(--main-txt);
+    text-align: right;
+    align-items: center;
+    line-height: 1.9;
+}
+
+.about-us .container .row .info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 20px;
+}
+
+.about-us .container .row .info .icon-box {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    direction: rtl;
+    gap: 15px;
+    box-shadow: 0 0 20px var(--active-bg);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-us .container .row .info .icon-box .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.about-us .container .row .info .icon-box .icon svg {
+    font-weight: 300;
+}
+
+.about-us .container .row .info .icon-box .title {
+    font-size: 1.5rem;
+}
+
+.about-us .container .row .info .icon-box .title a {
+    color: var(--main-txt);
+    text-decoration: none;
+}
+
+.about-us .container .row .info .icon-box .description {
+    font-size: 0.9rem;
+}
+
+@media (max-width:767px) {
+    .about-us .container .row .info .icon-box {
+        gap: 10px;
+    }
+
+    .about-us .container .row .info .icon-box .title {
+        font-size: 1.3rem;
+    }
+
+    .about-us .container .row .info .icon-box .description {
+        font-size: 0.8rem;
+    }
+}
+
+/* end about-us */
+
+/* start services*/
+.services {
+    background: white;
+}
+
+.services .icon-box p {
+    line-height: 2;
+    color: #777;
+}
+
+.services .container .row {
+    text-align: right;
+    direction: rtl;
+}
+
+.services .container .row>div {
+    transition: 0.4s;
+}
+
+.services .container .row>div:hover {
+    transform: translateY(-10px);
+    background: #26375633;
+}
+
+.services .icon-box {
+    background: rgba(255, 255, 255, 0.705);
+    box-shadow: 0 0 10px rgba(216, 212, 212, 0.664);
+    padding: 20px 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.services .container .row>div .icon-box .icon {
+    color: var(--main-bg);
+}
+
+.services .container .row>div .icon-box .icon svg {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width:992px) {
+    .services .container .row>div .icon-box .icon svg {
+        position: absolute;
+        top: -18px;
+        left: -15px;
+        font-size: 2.1rem;
+        background: #0d6efd2e;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
+
+.services .container .row>div .icon-box h4 a {
+    color: var(--main-bg);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.services .container .row>div .icon-box p {
+    font-size: 0.9rem;
+    line-height: 2.2;
+}
+
+/* end services */
+
+/* start cta */
+.cta {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta .info-box {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    box-shadow: 0 0 30px #20304b;
+    background: #2e436596;
+    border-radius: 5px;
+    color: white;
+}
+
+.cta .info-box svg {
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.cta .info-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.466);
+    margin: 10px 0;
+}
+
+.cta .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+/* end cta */
+
+/* start pricing */
+.pricing {
+    direction: rtl;
+}
+
+.pricing .container .row {
+    row-gap: 30px;
+}
+
+@media (max-width:500px) {
+    .pricing .container .row>div {
+        width: 380px;
+        max-width: 100%;
+    }
+}
+
+.pricing .container .row>div .box {
+    background: var(--main-bg);
+    min-height: 584px;
+    padding: 40px 10px;
+    display: grid;
+    gap: 25px;
+    text-align: right;
+    color: var(--main-txt);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 2px 3px 200px var(--dark-bg);
+}
+
+.pricing .container .row>div .box:hover {
+    background: var(--active-bg);
+    transform: translateY(-10px);
+}
+
+.pricing .container .row>div .box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pricing .container .row>div .box h4 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.pricing .container .row>div .box ul {
+    display: grid;
+    gap: 20px;
+}
+
+.pricing .container .row>div .box ul li {
+    width: calc(100% + 51px);
+    background: #0d6efd12;
+    padding: 10px 2px;
+    transform: translateX(10px);
+    box-shadow: 0 0 7px var(--active-bg);
+}
+
+/* end pricing */
+
+
+/* start animation */
+
+ img{
+    transform: translateY(0);
+    animation: 4s landing-img linear alternate infinite;
+}
+
+@keyframes landing-img{
+
+    from{
+        transform: translateY(-10px);
+    }
+    
+    to{
+        transform: translateY(20px);
+    }
+}
+
+/* end animation */
